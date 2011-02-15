@@ -1,0 +1,3 @@
+# Views
+
+![Views diagram](images/diagram-3.png) 

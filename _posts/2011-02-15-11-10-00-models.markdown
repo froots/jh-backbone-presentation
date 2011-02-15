@@ -1,0 +1,22 @@
+# Models
+
+E.g. a Programme
+
+<pre class="brush: js">
+var Programme = Backbone.Model.extend({
+   url: function() {
+       return '/tv/programme/' + this.get('eventId');
+   }
+});
+
+var boardwalkEmpire = new Programme({
+    eventId: 1023
+});
+
+boardwalkEmpire.fetch(); // Request from server
+</pre>
+
+* Read / write data
+* Server interaction
+
+

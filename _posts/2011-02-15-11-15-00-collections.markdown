@@ -1,0 +1,20 @@
+# Collections
+
+Collections of Models
+
+E.g. an ChannelRow - a collection of programmes for 1 channel
+
+<pre class="brush: js">
+    var ChannelRow = Backbone.Collection.extend({
+        model: Programme,
+        parse: function(response) {
+            return response.init.data; // Parse json response
+        } 
+    });
+    
+    var channelRow = new ChannelRow({
+        channelId: 2002
+    });
+    
+    channelRow.fetch(); // Get data from server
+</pre>

@@ -11,7 +11,8 @@
 	<!-- Slippy structural styles -->
 	<link type="text/css" rel="stylesheet" href="slippy/src/slippy-0.9.0.css"/>
 	<!-- Syntax highlighting -->
-	<link type="text/css" rel="stylesheet" href="stylesheets/highlighter.css"/>
+	<link type="text/css" rel="stylesheet" href="slippy/src/highlighter/shCore.css"/>
+	<link type="text/css" rel="stylesheet" href="slippy/src/highlighter/shThemeRDark.css"/>
 	<!-- Slippy theme -->
 	<link type="text/css" rel="stylesheet" href="stylesheets/slippy-pure-big-font.css"/>
 
@@ -20,11 +21,21 @@
 	<script type="text/javascript" src="slippy/src/jquery.history.js"></script>
 	<script type="text/javascript" src="slippy/src/slippy-0.9.0.js"></script>
 
+  <!-- Syntax highlighting core file  --> 
+  <script type="text/javascript" src="slippy/src/highlighter/shCore.js"></script> 
+  <!-- Syntax highlighting brushes, remove those you don't need --> 
+  <script type="text/javascript" src="slippy/src/highlighter/shBrushCss.js"></script> 
+  <script type="text/javascript" src="slippy/src/highlighter/shBrushGroovy.js"></script> 
+  <script type="text/javascript" src="slippy/src/highlighter/shBrushJScript.js"></script> 
+  <script type="text/javascript" src="slippy/src/highlighter/shBrushPlain.js"></script> 
+
 	<!-- Slippy init code -->
+	
 	<script type="text/javascript">
 	$(function() {
 		$(".slide").slippy({});
 	});
+	SyntaxHighlighter.all();
 	</script>
 </head>
 <body>

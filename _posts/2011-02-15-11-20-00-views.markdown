@@ -1,0 +1,26 @@
+# Views
+
+* Rendering, interaction and events.
+* Associated with a Model or Collection.
+
+e.g. a ProgrammeView:
+
+<pre class="brush: js">
+    var ProgrammeView = Backbone.View.extend({
+        
+        tagName: 'li',
+        
+        initialize: function() {
+            _.bindAll(this, 'render'); // maintain scope
+        },
+        
+        render: function() {
+            var html = $.tmpl(someTemplate, this.model.toJSON());
+            $(this.el).html(html);
+            return this;
+        }
+        
+    });
+    
+    var programmeView = new ProgrammeView({model: programme});
+</pre>
