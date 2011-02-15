@@ -1,0 +1,5 @@
+# EPG Model diagram
+
+Each model and collection has its own View class.
+
+![EPG Model diagram 1](http://dl.dropbox.com/u/6983841/github/images/epg-model.001-011.png)

@@ -1,0 +1,26 @@
+# Controllers
+
+* Routes based on #hash URL fragments
+* History management
+
+E.g. EpgController:
+
+<pre class="brush: js">
+    var EpgController = Backbone.Controller.extend({
+        
+        routes: {
+            "":                     "index",     // default
+            "programme/:programme": "programme", // #programme/123
+            "date/:date":           "date"       // #date/20110215
+        },
+        
+        index: function() {
+            ...
+        },
+        
+        ...
+        
+    });
+    
+    var epgController = new EpgController();
+</pre>
