@@ -1,3 +1,3 @@
 # Collections
 
-![Collection diagram](images/diagram-2.png) 
+![Collection diagram](http://dl.dropbox.com/u/6983841/github/images/diagram-1.png) 
